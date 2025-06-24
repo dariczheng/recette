@@ -1,0 +1,10 @@
+<main class="main-content">
+  <div class="recettes-scroll">
+    <div class="recipe-card" *ngFor="let recette of recettes">
+      <a [routerLink]="['/recette', recette.nom]">
+        <img [src]="recette.image" [alt]="recette.nom" />
+        <h2>{{ recette.nom }}</h2>
+      </a>
+    </div>
+  </div>
+</main>

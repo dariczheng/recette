@@ -1,0 +1,11 @@
+@if (recette) {
+<div>
+  <h1>{{ recette.nom }}</h1>
+  <img [src]="recette.image" [alt]="recette.nom" />
+  <!-- Add more details here -->
+</div>
+} @else {
+<div>
+  <p>Recette non trouvée.</p>
+</div>
+}
