@@ -28,6 +28,4 @@ build:
   tags: []
   interruptible: true
   retry: 1
-  # Add this line to enable privileged mode:
-  # (If you use GitLab.com shared runners, privileged mode is enabled by default. For self-hosted runners, set `privileged: true`.)
-  privileged: true
+
