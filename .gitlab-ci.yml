@@ -1,31 +1,31 @@
-image: node:20
-
 stages:
   - build
-  - deploy
-
-cache:
-  paths:
-    - node_modules/
-
-before_script:
-  - npm ci
 
 build:
+  # Use the official docker image.
+  image: docker:latest
   stage: build
+  services:
+    - docker:dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_TLS_CERTDIR: ""
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
   script:
-    - npm run build -- --configuration production
-  artifacts:
-    paths:
-      - dist/recette
+    - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA" .
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA"
 
-# Add this to your .gitlab-ci.yml if you want to deploy to GitLab Pages
-pages:
-  stage: deploy
-  script:
-    - cp -r dist/recette public
-  artifacts:
-    paths:
-      - public
-  only:
-    - main
+  # Run this job where a Dockerfile exists
+  rules:
+    - if: $CI_COMMIT_BRANCH
+      exists:
+        - Dockerfile
+
+  # Enable privileged mode for Docker-in-Docker
+  tags: []
+  interruptible: true
+  retry: 1
+  # Add this line to enable privileged mode:
+  # (If you use GitLab.com shared runners, privileged mode is enabled by default. For self-hosted runners, set `privileged: true`.)
+  privileged: true
