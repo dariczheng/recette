@@ -1,0 +1,31 @@
+image: node:20
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm ci
+
+build:
+  stage: build
+  script:
+    - npm run build -- --configuration production
+  artifacts:
+    paths:
+      - dist/recette
+
+# Add this to your .gitlab-ci.yml if you want to deploy to GitLab Pages
+pages:
+  stage: deploy
+  script:
+    - cp -r dist/recette public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
