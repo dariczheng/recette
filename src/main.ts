@@ -2,12 +2,14 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
+// Restore clean path from redirect
+const params = new URLSearchParams(window.location.search);
+const redirectPath = params.get('redirect');
+if (redirectPath) {
+  window.history.replaceState({}, '', redirectPath);
+}
 
 bootstrapApplication(AppComponent, {
-  providers: [
-    provideRouter(routes),
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
-  ],
-})
-  .catch((err) => console.error(err));
+  providers: [provideRouter(routes)],
+}).catch((err) => console.error(err));

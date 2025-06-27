@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <script type="text/javascript">
-      // Skip redirect for actual 404s like assets or files
-      var path = window.location.pathname;
-      if (!path.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|webp|woff|woff2|ttf|eot|json)$/)) {
-        var redirectTo = "/recette/index.html" + location.search + location.hash;
-        window.location.replace(redirectTo);
-      }
+      const fullPath = location.pathname + location.search + location.hash;
+      const newUrl =
+        "/recette/index.html?redirect=" + encodeURIComponent(fullPath);
+      window.location.replace(newUrl);
     </script>
   </head>
   <body></body>

@@ -15,7 +15,7 @@ before_script:
 build:
   stage: build
   script:
-    - npx ng build --configuration production --base-href /recette/
+    - npx ng build --configuration production --base-href /
   artifacts:
     paths:
       - dist/
