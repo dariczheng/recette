@@ -15,7 +15,7 @@ before_script:
 build:
   stage: build
   script:
-    - npx ng build --configuration production
+    - npx ng build --configuration production --base-href /recette/
   artifacts:
     paths:
       - dist/
@@ -25,7 +25,8 @@ build:
 pages:
   stage: deploy
   script:
-    - cp -r dist/* public/ # GitLab Pages needs a "public/" folder
+    - cp -r dist/* public/
+    - cp src/404.html public/404.html
   artifacts:
     paths:
       - public
