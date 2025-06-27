@@ -27,7 +27,7 @@ pages:
   script:
     - mkdir -p public
     - cp -r dist/recette/browser/* public/
-    - cp public/index.html public/404.html
+    - cp src/404.html public/404.html
   artifacts:
     paths:
       - public
