@@ -179,7 +179,110 @@ export const RECETTES: Recette[] = [
       "image": "/assets/images/mapo-tofu.jpg"
     }
   ]
-}
+},
+
+{
+  "nom": "riz au poulet mijoté à la sauce brune",
+  "image": "/assets/images/riz-au-poulet-jaune-mijote.jpg",
+  "steps": [
+    {
+      "description": "Ingrédients : 2 cuisses de poulet (haut ou pilon), 4 champignons shiitakés secs, 2 poivrons verts, quelques tranches de gingembre, 5 à 6 piments rouges secs, 2/3 c. à soupe de sel, 2 c. à soupe de vin de cuisson, 1 c. à soupe de poivre blanc, 2 c. à soupe de sauce soja, 1 c. à soupe de sucre blanc.",
+      "image": null
+    },
+    {
+      "description": "Découper les cuisses de poulet en morceaux d’environ 4 cm. Bien les laver.",
+      "image": "/assets/images/riz-au-poulet-jaune-mijote-etape-1.jpg"
+    },
+    {
+      "description": "Couper le gingembre en tranches, les piments secs en rondelles. Réhydrater les champignons et les couper en lamelles. Tailler les poivrons en lanières.",
+      "image": "/assets/images/riz-au-poulet-jaune-mijote-etape-2.jpg"
+    },
+    {
+      "description": "Préparer un caramel : dans une casserole avec un peu d’huile froide, ajouter 1 c. à soupe de sucre blanc. Faire chauffer à feu doux en remuant jusqu’à ce que le sucre fonde et devienne brun foncé.",
+      "image": "/assets/images/riz-au-poulet-jaune-mijote-etape-3.jpg"
+    },
+    {
+      "description": "Ajouter immédiatement les morceaux de poulet. Faire sauter à feu vif, puis ajouter 2 c. à soupe de vin de cuisson.",
+      "image": "/assets/images/riz-au-poulet-jaune-mijote-etape-4.jpg"
+    },
+    {
+      "description": "Ajouter le gingembre et les piments secs. Verser 2 c. à soupe de sauce soja. Bien mélanger tous les ingrédients.",
+      "image": "/assets/images/riz-au-poulet-jaune-mijote-etape-5.jpg"
+    },
+    {
+      "description": "Ajouter de l’eau jusqu’à couvrir le poulet. Ajouter les champignons réhydratés, puis le poivre blanc et le sel. Mélanger, couvrir et laisser mijoter à feu moyen-doux pendant 15 à 20 minutes.",
+      "image": "/assets/images/riz-au-poulet-jaune-mijote-etape-6.jpg"
+    },
+    {
+      "description": "Quand le poulet est tendre et la sauce épaissie (sans être trop sèche), ajouter les poivrons verts.",
+      "image": "/assets/images/riz-au-poulet-jaune-mijote-etape-7.jpg"
+    },
+    {
+      "description": "Ajouter une pincée de bouillon de poule. Mélanger délicatement et couper le feu dès que les poivrons sont à peine cuits.",
+      "image": "/assets/images/riz-au-poulet-jaune-mijote.jpg"
+    }
+  ]
+},
+{
+  nom: "riz à la poitrine de porc braisée à la taïwanaise",
+  image: "/assets/images/lu-rou-fan.jpg",
+  steps: [
+    {
+      "description": "Ingrédients : 1000 g de poitrine de porc avec peau, 1/2 oignon rouge, 12–16 champignons shiitakés secs (ou frais), œufs (quantité selon envie), 1–2 tiges de ciboule, 5–6 tranches de gingembre, quelques grains de poivre de Sichuan, 1 étoile d’anis, 1 feuille de laurier, 1 petit bâton de cannelle, 1 piment séché, 1–2 morceaux de sucre candi, sauce soja, sauce soja foncée, sel.",
+      "image": null
+    },
+    {
+      "description": "Couper la poitrine de porc en petits morceaux (environ 2–3 cm).",
+      "image": "/assets/images/lu-rou-fan-etape-1.jpg"
+    },
+    {
+      "description": "Faire tremper les champignons secs jusqu’à réhydratation, puis les couper en petits dés.",
+      "image": "/assets/images/lu-rou-fan-etape-2.jpg"
+    },
+    {
+      "description": "Couper l’oignon rouge en petits dés.",
+      "image": "/assets/images/lu-rou-fan-etape-3.jpg"
+    },
+    {
+      "description": "Faire bouillir les œufs dans de l’eau froide. Une fois que l’eau bout, cuire encore 3–4 minutes puis couper le feu et laisser reposer dans l’eau chaude. Écaler ensuite.",
+      "image": "/assets/images/lu-rou-fan-etape-4.jpg"
+    },
+    {
+      "description": "Faire revenir les dés d’oignon dans l’huile à feu moyen-doux pour en faire des oignons frits. Bien surveiller pour éviter qu’ils brûlent.",
+      "image": "/assets/images/lu-rou-fan-etape-5.jpg"
+    },
+    {
+      "description": "Blanchir les morceaux de porc dans l’eau froide. Porter à ébullition, retirer l’écume, puis égoutter. Garder le bouillon filtré.",
+      "image": "/assets/images/lu-rou-fan-etape-6.jpg"
+    },
+    {
+      "description": "Faire revenir la poitrine dans un peu d’huile (celle des oignons frits si possible) avec du gingembre jusqu’à ce qu’elle commence à dorer et à libérer son gras.",
+      "image": "/assets/images/lu-rou-fan-etape-7.jpg"
+    },
+    {
+      "description": "Ajouter les champignons, faire revenir, puis ajouter les oignons frits. Bien mélanger.",
+      "image": "/assets/images/lu-rou-fan-etape-8.jpg"
+    },
+    {
+      "description": "Verser la sauce soja claire, la sauce soja foncée, puis ajouter le bouillon filtré jusqu’à recouvrir les ingrédients. Ajouter le ciboule, le gingembre, les épices (poivre, anis étoilé, feuille de laurier, cannelle, piment).",
+      "image": "/assets/images/lu-rou-fan-etape-9.jpg"
+    },
+    {
+      "description": "Ajouter les œufs durs écalés. Porter à ébullition, puis couvrir et laisser mijoter à feu doux (40 à 60 min en cocotte, sinon jusqu’à 80 min).",
+      "image": "/assets/images/lu-rou-fan-etape-10.jpg"
+    },
+    {
+      "description": "Vers le milieu de cuisson, ajouter le sucre candi et rectifier le sel.",
+      "image": "/assets/images/lu-rou-fan-etape-11.jpg"
+    },
+    {
+      "description": "Quand la viande est bien tendre, laisser réduire un peu la sauce. Il doit rester du jus pour napper le riz.",
+      "image": "/assets/images/lu-rou-fan-etape-12.jpg"
+    }
+  ]
+},
+
+
 
   // Ajoute d'autres recettes ici
 ];
