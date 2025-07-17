@@ -1,11 +1,20 @@
 @if (recette) {
-<div>
-  <h1>{{ recette.nom }}</h1>
-  <img [src]="recette.image" [alt]="recette.nom" />
-  <!-- Add more details here -->
-</div>
+  <div class="recette-detail">
+    <h1>{{ recette.nom }}</h1>
+    <div class="steps-section">
+      <div class="steps-grid">
+        <div class="step-item" *ngFor="let step of recette.steps; let i = index">
+          <img *ngIf="step.image" [src]="step.image" />
+          <div class="step-desc">
+            <span *ngIf="i > 0" class="step-number">{{ i }}</span>
+            <p>{{ step.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 } @else {
-<div>
-  <p>Recette non trouvée.</p>
-</div>
+  <div>
+    <p>Recette non trouvée.</p>
+  </div>
 }

@@ -1,0 +1,76 @@
+$primary-color: rgb(181, 199, 158);
+$secondary-color: #010225;
+
+.recette-detail,
+.recette-detail * {
+  font-family: "DM Serif Text", serif;
+}
+
+.recette-detail {
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #e0e0e0; // light gray line
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.step-item img {
+  width: 100%;
+  aspect-ratio: 16 / 9; // or use the ratio from your home page
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  display: block;
+}
+
+.step-desc {
+  display: flex;
+  margin-left: 0%;
+}
+
+.step-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $primary-color;
+  margin-left: 0%;
+  margin-right: 0;
+  min-width: 1.5rem;
+  text-align: left;
+  line-height: 1;
+}
+
+.step-desc p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .step-number {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    min-width: 2rem;
+  }
+
+  // Remove the border for the last step
+  .step-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}

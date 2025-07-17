@@ -1,19 +1,26 @@
-$primary-color: #d32f2f;
+$primary-color: black;
 $secondary-color: #fff8e1;
 $accent-color: #388e3c;
 
 .main-content {
+  background: transparent;
   display: flex;
   justify-content: center;
   margin-top: 3rem;
 }
 
 .recettes-scroll {
-  display: flex;
+  font-family: "DM Serif Text", serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // 4 columns on desktop
   gap: 2rem;
-  overflow-x: auto;
   padding: 2rem 0;
-  scroll-snap-type: x mandatory;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr; // 1 column on mobile
+    gap: 1rem;
+    padding: 1rem 0;
+  }
 }
 
 .recipe-card {

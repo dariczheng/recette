@@ -1,11 +1,15 @@
 <header class="header">
-  <h1>Recettes de Cuisine Chinoise</h1>
-  <nav>
-    <a routerLink="/">Accueil</a>
-    <a routerLink="/">Recettes</a>
-    <a href="#">À propos</a>
-    <a href="#">Contact</a>
-  </nav>
+  <div class="menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav class="nav-links">
+      <a routerLink="/">Accueil</a>
+      <a routerLink="/">Recettes</a>
+      <a href="#">À propos</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+  <h1>Recettes de la cuisine chinoise</h1>
 </header>
 <router-outlet></router-outlet>
 
