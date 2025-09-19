@@ -281,6 +281,48 @@ export const RECETTES: Recette[] = [
     }
   ]
 },
+{
+  "nom": "petits pains vapeur au potiron",
+  "image": "/assets/images/nan-gua-man-tou.jpg",
+  "steps": [
+    {
+      "description": "Ingrédients : 250 g de purée de potiron, 500 g de farine, 4 g de levure, un peu d’huile, 50 g de sucre en poudre.",
+      "image": null
+    },
+    {
+      "description": "Peler et couper le potiron en tranches. Le cuire à la vapeur jusqu’à tendreté puis, avec des gants, l’écraser en purée.",
+      "image": "/assets/images/nan-gua-man-tou-etape-1.jpg"
+    },
+    {
+      "description": "Délayer la levure dans un peu d’eau tiède. Mélanger tous les ingrédients dans un saladier. Former une pâte en mélangeant d’abord en miettes, puis en pétrissant.",
+      "image": "/assets/images/nan-gua-man-tou-etape-2.jpg"
+    },
+    {
+      "description": "Pétrir jusqu’à obtenir une pâte lisse : la pâte ne colle ni aux mains, ni au saladier. Couvrir de film alimentaire et laisser lever (première fermentation).",
+      "image": "/assets/images/nan-gua-man-tou-etape-3.jpg"
+    },
+    {
+      "description": "Laisser pousser à température ambiante jusqu’à 2–3 fois son volume (1 à 2 h selon la température). Si en enfonçant un doigt la pâte ne rebondit pas, elle est prête.",
+      "image": "/assets/images/nan-gua-man-tou-etape-4.jpg"
+    },
+    {
+      "description": "L’intérieur de la pâte doit présenter une structure alvéolée en nid d’abeille.",
+      "image": "/assets/images/nan-gua-man-tou-etape-5.jpg"
+    },
+    {
+      "description": "Sortir la pâte et la dégazer en la pétrissant à nouveau. Saupoudrer un peu de farine sèche en pétrissant (plus si vous préférez une mie ferme). Rouler en rectangle avec un rouleau, enrouler en boudin et couper en morceaux de 30 g environ.",
+      "image": "/assets/images/nan-gua-man-tou-etape-6.jpg"
+    },
+    {
+      "description": "Placer dans le panier vapeur. Allumer le feu à froid pendant 2 min, puis éteindre. Laisser lever une seconde fois 30 min jusqu’à doubler de volume.",
+      "image": "/assets/images/nan-gua-man-tou-etape-7.jpg"
+    },
+    {
+      "description": "Rallumer le feu et cuire à la vapeur 10–15 min. Couper le feu et laisser reposer 5 min sans ouvrir le couvercle. Les mantou sont dorés, moelleux et parfumés!",
+      "image": "/assets/images/nan-gua-man-tou-etape-8.jpg"
+    }
+  ]
+},
 
 
 
